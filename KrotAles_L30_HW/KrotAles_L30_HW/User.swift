@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct User {
-    let login: String
-    let password: String
-    
+struct User: Codable {
+    var login: String
+    var password: String
+    var token: String?
+
     init(login: String, password: String){
         self.login = login
         self.password = password

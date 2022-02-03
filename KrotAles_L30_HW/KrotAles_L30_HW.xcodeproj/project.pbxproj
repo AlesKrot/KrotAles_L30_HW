@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		E19F946A27AAC03D004AF401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F946927AAC03D004AF401 /* AppDelegate.swift */; };
 		E19F946C27AAC03D004AF401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F946B27AAC03D004AF401 /* SceneDelegate.swift */; };
-		E19F946E27AAC03D004AF401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F946D27AAC03D004AF401 /* ViewController.swift */; };
+		E19F946E27AAC03D004AF401 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F946D27AAC03D004AF401 /* RootViewController.swift */; };
 		E19F947127AAC03D004AF401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19F946F27AAC03D004AF401 /* Main.storyboard */; };
 		E19F947327AAC03E004AF401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19F947227AAC03E004AF401 /* Assets.xcassets */; };
 		E19F947627AAC03E004AF401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19F947427AAC03E004AF401 /* LaunchScreen.storyboard */; };
+		E19F948027AAFFEC004AF401 /* CredentialsKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F947F27AAFFEB004AF401 /* CredentialsKeychainStorage.swift */; };
+		E19F948327AB0CD3004AF401 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F948127AB0CD3004AF401 /* LoginViewController.swift */; };
+		E19F948427AB0CD3004AF401 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19F948227AB0CD3004AF401 /* LoginViewController.xib */; };
+		E19F948627AB1015004AF401 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F948527AB1015004AF401 /* User.swift */; };
+		E19F948827AB1DF1004AF401 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19F948727AB1DF1004AF401 /* Server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E19F946627AAC03D004AF401 /* KrotAles_L30_HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrotAles_L30_HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19F946927AAC03D004AF401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19F946B27AAC03D004AF401 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E19F946D27AAC03D004AF401 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E19F946D27AAC03D004AF401 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E19F947027AAC03D004AF401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E19F947227AAC03E004AF401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19F947527AAC03E004AF401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E19F947727AAC03E004AF401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19F947F27AAFFEB004AF401 /* CredentialsKeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsKeychainStorage.swift; sourceTree = "<group>"; };
+		E19F948127AB0CD3004AF401 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E19F948227AB0CD3004AF401 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E19F948527AB1015004AF401 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E19F948727AB1DF1004AF401 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				E19F946927AAC03D004AF401 /* AppDelegate.swift */,
 				E19F946B27AAC03D004AF401 /* SceneDelegate.swift */,
-				E19F946D27AAC03D004AF401 /* ViewController.swift */,
+				E19F946D27AAC03D004AF401 /* RootViewController.swift */,
+				E19F948127AB0CD3004AF401 /* LoginViewController.swift */,
+				E19F948227AB0CD3004AF401 /* LoginViewController.xib */,
+				E19F947F27AAFFEB004AF401 /* CredentialsKeychainStorage.swift */,
+				E19F948727AB1DF1004AF401 /* Server.swift */,
+				E19F948527AB1015004AF401 /* User.swift */,
 				E19F946F27AAC03D004AF401 /* Main.storyboard */,
 				E19F947227AAC03E004AF401 /* Assets.xcassets */,
 				E19F947427AAC03E004AF401 /* LaunchScreen.storyboard */,
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19F948427AB0CD3004AF401 /* LoginViewController.xib in Resources */,
 				E19F947627AAC03E004AF401 /* LaunchScreen.storyboard in Resources */,
 				E19F947327AAC03E004AF401 /* Assets.xcassets in Resources */,
 				E19F947127AAC03D004AF401 /* Main.storyboard in Resources */,
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19F946E27AAC03D004AF401 /* ViewController.swift in Sources */,
+				E19F948827AB1DF1004AF401 /* Server.swift in Sources */,
+				E19F948027AAFFEC004AF401 /* CredentialsKeychainStorage.swift in Sources */,
+				E19F948627AB1015004AF401 /* User.swift in Sources */,
+				E19F946E27AAC03D004AF401 /* RootViewController.swift in Sources */,
 				E19F946A27AAC03D004AF401 /* AppDelegate.swift in Sources */,
+				E19F948327AB0CD3004AF401 /* LoginViewController.swift in Sources */,
 				E19F946C27AAC03D004AF401 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

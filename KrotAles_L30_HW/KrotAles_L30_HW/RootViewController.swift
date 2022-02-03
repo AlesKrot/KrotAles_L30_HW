@@ -9,6 +9,7 @@ import UIKit
 import Security
 
 class RootViewController: UIViewController {
+    @IBOutlet weak var userLabel: UILabel!
     
     let credentialStorage = CredentialsKeychainStorage()
     var domain = "reminder.app"
@@ -16,24 +17,28 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setupNavigationBar()
-        
+
         let token = credentialStorage.check(for: domain)
         if token == nil {
-            checkAutorization()
+            makeAutorization()
         } else {
             print("I have been authorized")
         }
     }
-    private func setupNavigationBar(){
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-    }
+//    private func setupNavigationBar(){
+//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        navigationController?.navigationBar.shadowImage = UIImage()
+//    }
     
-    private func checkAutorization(){
+    private func makeAutorization(){
         let loginViewController = LoginViewController()
-        loginViewController.modalPresentationStyle = .fullScreen
+        loginViewController.modalPresentationStyle = .automatic
         present(loginViewController, animated: true, completion: nil)
     }
 }
 
+extension RootViewController: LoginViewControllerDelegate {
+    func loginViewController(_ controller: LoginViewController, didCreateNew user: User) {
+        userLabel.text = user.login
+    }
+}
